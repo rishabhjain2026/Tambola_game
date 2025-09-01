@@ -63,9 +63,16 @@ cd tambola-host-dashboard
 # Install backend dependencies
 npm install
 
+cd server
+nom run dev
+
 # Install frontend dependencies
+
+
 cd client
 npm install
+
+npm run
 cd ..
 ```
 
