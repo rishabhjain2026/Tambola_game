@@ -1,0 +1,29 @@
+{
+  "name": "tambola-host-dashboard",
+  "version": "1.0.0",
+  "description": "Tambola (Housie) Host Dashboard for managing games and verifying claims",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "setup": "node setup.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "multer": "^1.4.5-lts.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": ["tambola", "housie", "dashboard", "game"],
+  "author": "Tambola Host Dashboard",
+  "license": "MIT"
+}
